@@ -5,13 +5,24 @@ class User {
     this.email = email;
     this.name = name;
   }
+  login() {
+    console.log(this.email, 'just logged in');
+  }
+  logout() {
+    console.log(this.email, 'just logged out');
+  }
 }
 let userOne = new User('wolverine@marvel.com', 'wolverine');
 let userTwo = new User('sabertooth@marvel.com', 'sabertooth');
 
-console.log(userOne);
-console.log(userTwo);
-//node object.js to run
+userOne.login();
+userTwo.logout();
+
+//console.log(userOne);  UNCOMMENT THIS TO SHOW EMAIL AND NAME ONLY
+//console.log(userTwo);    "         "   "   "   "     "     "   "
+
+//****DIRECTIONS***** */
+//Use node object.js to run
 
 //the "new" keyword
 // - creates a new empty object{}
