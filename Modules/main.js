@@ -1,6 +1,7 @@
-import User, { printName as printUserName, printAge } from '/user.js';
+const User = require('./user');
 
 const user = new User('Tupac', 50);
-console.log(user);
-printUserName(user);
-printAge(user);
+user.printName();
+user.printAge();
+//printUserName(user);
+//printAge(user);

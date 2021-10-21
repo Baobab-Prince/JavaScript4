@@ -1,14 +1,14 @@
-export default class User {
+class User {
   constructor(name, age) {
     this.name = name;
     this.age = age;
   }
+  printName() {
+    console.log(`User's name is ${this.name}`);
+  }
+  printAge() {
+    console.log(`User is ${this.age} years old`);
+  }
 }
 
-export function printName(user) {
-  console.log(`User's name is ${user.name}`);
-}
-
-export function printAge(user) {
-  console.log(`User is ${user.age} years old`);
-}
+module.exports = User;
