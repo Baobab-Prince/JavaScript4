@@ -1,4 +1,4 @@
-//constructor functions contructs/creaates an object
+//constructor functions contructs/creates an object
 
 export class User {
   constructor(email, name) {
