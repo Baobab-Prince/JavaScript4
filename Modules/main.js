@@ -1,4 +1,4 @@
-const User = require('./user');
+import User from './user.js';
 
 const user = new User('Tupac', 50);
 user.printName();

@@ -10,10 +10,12 @@ class Animal {
 }
 
 class Panda extends Animal {
-  //   eats() {
-  //     console.log(this.name + ' eats bamboo');
-  //   }
+  //two classes have the same function (eats) parent v child
+  eats() {
+    console.log(this.name + ' eats bamboo');
+  }
 }
 
+//create object for child class
 let buttercup = new Panda('Buttercup');
 buttercup.eats();
